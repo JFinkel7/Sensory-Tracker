@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_Black"
+    android:elevation="4dp">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/serviceSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:checked="false"
+        android:textAlignment="center"
+        android:text="@string/sensory_service"
+        android:textColor="@color/Azure"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:textSize="35sp"
+        app:showText="true" />
+
+
+</androidx.appcompat.widget.Toolbar>

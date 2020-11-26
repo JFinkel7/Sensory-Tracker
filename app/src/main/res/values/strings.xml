@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sensory Tracker</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="sensory_service">Sensory Service</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+</resources>

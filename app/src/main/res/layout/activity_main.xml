@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar & Switch Button -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/_toolbar" />
+
+
+    <!-- (Layout) ListView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnStopService"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        tools:context=".ListActivity">
+
+        <!--ListView -->
+        <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/Gray"
+            android:dividerHeight="1px"/>
+
+    </LinearLayout>
+
+
+    <!-- [BTN] Stop Service -->
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_Black"
+        android:elevation="4dp"
+        android:onClick="btn_StopService"
+        android:padding="5dp"
+        android:text="@string/stop_service"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
